@@ -60,6 +60,7 @@ export default function AddContact() {
       .catch((error) => {
         setLoading(false);
         console.error(error);
+        window.alert(error.message);
       });
   };
   return loading ? (

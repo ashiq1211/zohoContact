@@ -40,6 +40,7 @@ export default function Register() {
         }
         setLoading(false);
         console.error(error);
+        window.alert(error.message);
       });
   };
   return loading ? (
@@ -105,7 +106,7 @@ export default function Register() {
         ></i>
         Sign Up
       </button>
-      <p style={{ color: "grey" }}>
+      <p style={{ color: "grey", marginTop: "10px" }}>
         By clicking the "Sign Up" button, you are creating an account, and you
         agree to the Terms of Use.
       </p>

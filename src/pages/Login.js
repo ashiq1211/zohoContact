@@ -29,6 +29,7 @@ export default function Login() {
         }
         setLoading(false);
         console.error(error);
+        window.alert(error.message);
       });
   };
   return loading ? (
